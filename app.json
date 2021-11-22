@@ -1,0 +1,29 @@
+{
+    "name": "TelegramBot",
+    "description": "A Base Telegram Bot",
+    "logo": " https://telegra.ph/file/ed42f17396b2546801df6.jpg",
+    "keywords": [
+        "telegram",
+        "bot",
+        "pyrogram",
+        "educational"
+    ],
+    "repository": "https://github.com/IzumiCypherX/PyrobotBase",
+    "env": {
+        "TOKEN": {
+            "description": "Your bot token. Can be obtained from https://telegram.dog/BotFather/",
+            "required": true,
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get API_ID from my.telegram.org",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get API_HASH from my.telegram.org",
+            "required": true,
+            "value": ""
+        }
+    }
+}
