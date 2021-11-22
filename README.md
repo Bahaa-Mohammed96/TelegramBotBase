@@ -1,6 +1,6 @@
-# PyrobotBase
+# PTB Bot Base
 
-### The Base Repository for making of a Telegram Bot using the Pyrogram Library.
+### The Base Repository for making of a Telegram Bot using the Python-Telegram-Bot Library.
 <br>
 
 ## Licensing 
@@ -14,16 +14,17 @@ This Bot can be run both on your Local System or on Heroku.
 For Local Deployment:
 
 > Firstly Change the Configuration in bot/\_\_init\_\_.py
+> Make Sure you're in the python-telegram-bot branch
 ```console
-root@izumicypherx ~$ git clone https://github.com/IzumiCypherX/PyrobotBase.git
-root@izumicypherx ~$ cd PyrobotBase
+root@izumicypherx ~$ git clone https://github.com/IzumiCypherX/TelegramBotBase.git
+root@izumicypherx ~$ cd TelegramBotBase
 root@izumicypherx ~$ pip install -U -r requirements.txt
 root@izumicypherx ~$ python -m bot
 ```
 <br>
 For Deployment On Heroku:
 
-Follow This Link : [Here](https://heroku.com/deploy?template=https://github.com/IzumiCypherX/PyrobotBase)
+Follow This Link : [Here](https://heroku.com/deploy?template=https://github.com/IzumiCypherX/TelegramBotBase/tree/python-telegram-bot)
 
 ## Support and Management
 > Supports Can be reached out to at [@TangentChats](https://telegram.dog/TangentChats)

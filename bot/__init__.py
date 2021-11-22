@@ -23,8 +23,9 @@ SOFTWARE.
 """
 
 import os
+import logging
 
-from pyrogram import Client
+from telegram.ext import Updater
 
 API_ID = os.environ.get('API_ID', None)
 API_HASH = os.environ.get('API_HASH', None)
@@ -39,26 +40,17 @@ API_HASH = ""
 TOKEN = ""
 """
 
-plugins = dict(
-    root = "bot/plugins",
-)
+# Making the Updater Object
 
-bot = Client(
-    "bot",
-    api_id = API_ID,
-    api_hash = API_HASH,
-    bot_token = TOKEN,
-    plugins=plugins
-)
+updater = Updater(token=TOKEN)
+
+# Setting up the dispatcher
+
+dispatcher = updater.dispatcher
+
+# Setting Up Logging of Errors
+
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                     level=logging.INFO)
 
 print("Starting The Bot Client")
-
-bot.run()
-
-# can be used for getting/sending bot info
-
-info = bot.get_me()
-
-BOT_ID = info.id
-BOT_NAME = info.first_name
-BOT_USERNAME = info.username

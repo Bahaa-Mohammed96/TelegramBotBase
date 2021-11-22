@@ -22,12 +22,26 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-import logging
+from bot import dispatcher, updater
+
+from telegram import Update
+from telegram.ext import CallbackContext, run_async, 
 
 
-# Logger
+# Using send_message method
 
-logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
-                    level=logging.WARNING)
+def start(update: Update, context: CallbackContext):
+    if update.effective_chat.type != "private": #Ensuring that bot only replies to PMs
+        pass
+    else: 
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Hello There!, Join My Support Group! @TangentChats")
 
+
+START_HANDLER = CommadHandler("start", start, run_async=True)
+
+dispatcher.add_handler(START_HANDLER)
 # Copyright (c) 2021
+
+if __name__ == "__main__":
+    print("Starting The Bot Client")
+    updater.start_polling()
