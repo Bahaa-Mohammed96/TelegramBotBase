@@ -15,15 +15,15 @@ For Local Deployment:
 
 > Firstly Change the Configuration in bot/\_\_init\_\_.py
 ```console
-root@izumicypherx ~$ git clone https://github.com/IzumiCypherX/PyrobotBase.git
-root@izumicypherx ~$ cd PyrobotBase
+root@izumicypherx ~$ git clone https://github.com/IzumiCypherX/TelegrambotBase.git
+root@izumicypherx ~$ cd TelgramBotBase
 root@izumicypherx ~$ pip install -U -r requirements.txt
 root@izumicypherx ~$ python -m bot
 ```
 <br>
 For Deployment On Heroku:
 
-Follow This Link : [Here](https://heroku.com/deploy?template=https://github.com/IzumiCypherX/PyrobotBase)
+Follow This Link : [Here](https://heroku.com/deploy?template=https://github.com/IzumiCypherX/TelegramBotBase)
 
 ## Support and Management
 > Supports Can be reached out to at [@TangentChats](https://telegram.dog/TangentChats)
