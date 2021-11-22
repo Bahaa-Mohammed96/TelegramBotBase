@@ -16,7 +16,7 @@ For Local Deployment:
 > Firstly Change the Configuration in bot/\_\_init\_\_.py
 > Make Sure you're in the python-telegram-bot branch
 ```console
-root@izumicypherx ~$ git clone https://github.com/IzumiCypherX/TelegramBotBase.git
+root@izumicypherx ~$ git clone -b python-telegram-bot https://github.com/IzumiCypherX/TelegramBotBase.git
 root@izumicypherx ~$ cd TelegramBotBase
 root@izumicypherx ~$ pip install -U -r requirements.txt
 root@izumicypherx ~$ python -m bot
